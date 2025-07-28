@@ -1,7 +1,7 @@
-[![codecov](https://codecov.io/github/mjorgegulab/nestjs-cryptography/branch/main/graph/badge.svg?token=I0ZFVZTREB)](https://codecov.io/github/mjorgegulab/nestjs-cryptography)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d4c33e2a77d64f89ba7f6ba54c6d8cb5)](https://app.codacy.com/gh/mjorgegulab/nestjs-cryptography/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
-[![CodeQL](https://github.com/mjorgegulab/nestjs-cryptography/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/mjorgegulab/nestjs-cryptography/actions/workflows/github-code-scanning/codeql)
-[![Publish Wiki](https://github.com/mjorgegulab/nestjs-cryptography/actions/workflows/deploy-wiki-prod.yaml/badge.svg?branch=main)](https://nestjs-cryptography.thewolfx41.dev)
+[![codecov](https://codecov.io/github/cipher-fox/nestjs-cryptography/branch/main/graph/badge.svg?token=I0ZFVZTREB)](https://codecov.io/github/mjorgegulab/nestjs-cryptography)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d4c33e2a77d64f89ba7f6ba54c6d8cb5)](https://app.codacy.com/gh/cipher-fox/nestjs-cryptography/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![CodeQL](https://github.com/cipher-fox/nestjs-cryptography/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/mjorgegulab/nestjs-cryptography/actions/workflows/github-code-scanning/codeql)
+[![Publish Wiki](https://github.com/cipher-fox/nestjs-cryptography/actions/workflows/deploy-wiki-prod.yaml/badge.svg?branch=main)](https://nestjs-cryptography.cypher-fox.com)
 
 # NestJS - Cryptography
 
@@ -141,7 +141,7 @@ These options are passed through to the underlying cryptographic operations of t
 [2]: https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf#page=27
 [3]: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf#page=112
 [4]: https://www.npmjs.com/package/nestjs-cryptography
-[5]: https://nestjs-cryptography.thewolfx41.dev/docs/api-reference/settings
-[6]: https://nestjs-cryptography.thewolfx41.dev
-[7]: https://nestjs-cryptography.thewolfx41.dev/docs/category/guides
-[8]: https://nestjs-cryptography.thewolfx41.dev/docs/api-reference/settings
+[5]: https://nestjs-cryptography.cypher-fox.com/docs/api-reference/settings
+[6]: https://nestjs-cryptography.cypher-fox.com
+[7]: https://nestjs-cryptography.cypher-fox.com/docs/category/guides
+[8]: https://nestjs-cryptography.cypher-fox.com/docs/api-reference/settings

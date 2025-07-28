@@ -3,17 +3,17 @@
   "version": "3.2.2",
   "author": {
     "name": "Marc Jorge Gonzalez",
-    "url": "https://github.com/mjorgegulab"
+    "url": "https://github.com/cipher-fox"
   },
   "license": "MIT",
   "description": "Secure NestJS cryptography module 🔐",
-  "homepage": "https://nestjs-cryptography.thewolfx41.dev",
+  "homepage": "https://nestjs-cryptography.cypher-fox.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mjorgegulab/nestjs-cryptography.git"
+    "url": "git+https://github.com/cipher-fox/nestjs-cryptography.git"
   },
   "bugs": {
-    "url": "https://github.com/mjorgegulab/nestjs-cryptography/issues"
+    "url": "https://github.com/cipher-fox/nestjs-cryptography/issues"
   },
   "scripts": {
     "build": "rimraf -rf dist && tsc -p tsconfig.json",

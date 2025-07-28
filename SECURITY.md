@@ -11,4 +11,4 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Please report security issues to security@thewolfx41.dev
+Please report security issues to security@cypher-fox.com

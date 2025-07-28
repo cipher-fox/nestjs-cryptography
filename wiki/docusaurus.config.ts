@@ -7,10 +7,10 @@ const config: Config = {
   tagline: 'Secure NestJS cryptography module 🔐',
   favicon: 'img/nestjs_favicon.ico',
 
-  url: 'https://nestjs-cryptography.thewolfx41.dev',
+  url: 'https://nestjs-cryptography.cypher-fox.com',
   baseUrl: '/',
 
-  organizationName: 'mjorgegulab',
+  organizationName: 'cipher-fox',
   projectName: 'nestjs-cryptography',
 
   onBrokenLinks: 'warn',
@@ -27,7 +27,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/mjorgegulab/nestjs-cryptography',
+          editUrl: 'https://github.com/cipher-fox/nestjs-cryptography',
           lastVersion: 'current',
           versions: {
             current: {
@@ -72,7 +72,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/mjorgegulab/nestjs-cryptography',
+          href: 'https://github.com/cipher-fox/nestjs-cryptography',
           label: 'GitHub',
           position: 'right',
         },
@@ -95,11 +95,11 @@ const config: Config = {
           items: [
             {
               label: 'Issues',
-              href: 'https://github.com/mjorgegulab/nestjs-cryptography/issues',
+              href: 'https://github.com/cipher-fox/nestjs-cryptography/issues',
             },
             {
               label: 'Contribute',
-              href: 'https://github.com/mjorgegulab/nestjs-cryptography/issues',
+              href: 'https://github.com/cipher-fox/nestjs-cryptography/issues',
             },
           ],
         },
@@ -117,7 +117,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/mjorgegulab',
+              href: 'https://github.com/cipher-fox',
             },
           ],
         },
