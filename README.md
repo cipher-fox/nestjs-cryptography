@@ -1,5 +1,5 @@
 [![codecov](https://codecov.io/github/cipher-fox/nestjs-cryptography/branch/main/graph/badge.svg?token=I0ZFVZTREB)](https://codecov.io/github/mjorgegulab/nestjs-cryptography)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d4c33e2a77d64f89ba7f6ba54c6d8cb5)](https://app.codacy.com/gh/cipher-fox/nestjs-cryptography/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/42923e1b0a6a40269d8deb79e6957394)](https://app.codacy.com/gh/cipher-fox/nestjs-cryptography/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![CodeQL](https://github.com/cipher-fox/nestjs-cryptography/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/mjorgegulab/nestjs-cryptography/actions/workflows/github-code-scanning/codeql)
 [![Publish Wiki](https://github.com/cipher-fox/nestjs-cryptography/actions/workflows/deploy-wiki-prod.yaml/badge.svg?branch=main)](https://nestjs-cryptography.cypher-fox.com)
 
