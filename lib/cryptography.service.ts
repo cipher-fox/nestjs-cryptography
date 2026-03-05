@@ -262,6 +262,7 @@ export class CryptographyService {
 
     hmac.update(inputData);
 
+    // eslint-disable-next-line no-useless-assignment
     key = null;
 
     return hmac.digest();
