@@ -90,10 +90,15 @@ import {
 @Module({
   imports: [
     CryptographyModule.forRoot<CryptographyOptionsInterface>({
-      // The rest of the configuration
+      useDefaultValues: true,
+      hashing: {
+        hmac: {
+          masterKey: 'a8e71ea1c....3f85a5ada2c'
+        }
+      },
       encryption: {
         symmetric: {
-          masterKey: '5f7f...46bf'
+          masterKey: 'db250342cc....a905d750'
         }
       }
     }),
