@@ -3,7 +3,7 @@ import * as argon2 from 'argon2';
 import { Inject, Injectable } from '@nestjs/common';
 import { MODULE_OPTIONS_TOKEN } from './cryptography.module-definition';
 import {
-  CryptographyOptionsInterface,
+  CryptographyOptions,
   GenericOptionsInterface,
 } from './interfaces';
 import {
@@ -15,7 +15,7 @@ import {
 export class CryptographyService {
   constructor(
     @Inject(MODULE_OPTIONS_TOKEN)
-    private moduleOptions: CryptographyOptionsInterface,
+    private moduleOptions: CryptographyOptions,
   ) {}
 
   private convertInputData(

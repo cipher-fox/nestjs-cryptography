@@ -36,3 +36,5 @@ export interface CryptographyOptionsInterface {
   hashing?: Partial<CryptographyHashingOptions>;
   encryption?: Partial<CryptographyEncryptionOptions>;
 }
+
+export interface CryptographyOptions extends CryptographyOptionsInterface {}

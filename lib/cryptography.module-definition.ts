@@ -1,8 +1,8 @@
 import { ConfigurableModuleBuilder } from '@nestjs/common';
-import { CryptographyOptionsInterface } from './interfaces';
+import { CryptographyOptions } from './interfaces';
 
 export const { ConfigurableModuleClass, MODULE_OPTIONS_TOKEN } =
-  new ConfigurableModuleBuilder<CryptographyOptionsInterface>()
+  new ConfigurableModuleBuilder<CryptographyOptions>()
     .setClassMethodName('forRoot')
     .setExtras(
       {
