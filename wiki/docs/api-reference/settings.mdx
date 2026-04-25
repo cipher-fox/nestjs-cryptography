@@ -50,10 +50,10 @@ import GenerateHexButton from '@site/src/components/GenerateHexButton';
 
 ```typescript title="app.module.ts"
 import { Module } from '@nestjs/common';
-import * as argon2 from 'argon2';
 import {
   CryptographyModule,
   CryptographyOptionsInterface,
+  Argon2Type
 } from 'nestjs-cryptography';
 
 @Module({
@@ -67,14 +67,14 @@ imports: [
         kdf: {
           timeCost: 32,
           memoryCost: 131072,
-          argon2Type: argon2.argon2i,
+          argon2Type: Argon2Type.argon2i,
           outputKeyLength: 32,
         },
         hashing: {
           password: {
             timeCost: 10,
             memoryCost: 65536,
-            argon2Type: argon2.argon2id,
+            argon2Type: Argon2Type.argon2id,
             outputKeyLength: 64,
           },
           hmac: {
@@ -97,6 +97,14 @@ export class AppModule {}
 
   </div>
 </details>
+
+## `isGlobal`
+Makes this module global-scoped
+  > `type: boolean` | **optional** | default: ___false___
+
+## `useDefaultValues`
+Enables a secure default configuration, so advanced options below don’t need to be specified. Master keys for HMAC and symmetric encryption are still required.
+  > `type: boolean` | **optional** | default: ___false___
 
 ## `kdf`
 
