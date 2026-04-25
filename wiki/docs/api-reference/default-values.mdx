@@ -1,0 +1,26 @@
+---
+title: Default Configuration Values
+sidebar_label: Default Configuration Values
+sidebar_position: 2
+description: Module configuration default values
+
+---
+
+```typescript
+{
+  kdf: {
+    outputKeyLength: 32,
+    argon2Type: Argon2Type.argon2i,
+    memoryCost: 65536,
+    timeCost: 3,
+  },
+  hashing: {
+    password: {
+      outputKeyLength: 64,
+      argon2Type: Argon2Type.argon2id,
+      memoryCost: 131072,
+      timeCost: 4,
+    },
+  }
+}
+```
