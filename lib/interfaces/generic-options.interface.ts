@@ -3,3 +3,5 @@ export interface GenericOptionsInterface {
   inputDataEncoding?: BufferEncoding;
   inputKeyEncoding?: BufferEncoding;
 }
+
+export interface GenericOptions extends GenericOptionsInterface {}

@@ -2,10 +2,7 @@ import * as crypto from 'node:crypto';
 import * as argon2 from 'argon2';
 import { Inject, Injectable } from '@nestjs/common';
 import { MODULE_OPTIONS_TOKEN } from './cryptography.module-definition';
-import {
-  CryptographyOptions,
-  GenericOptionsInterface,
-} from './interfaces';
+import { CryptographyOptions, GenericOptions } from './interfaces';
 import {
   DEFAULT_KDF_CRYPTOGRAPHY_OPTIONS,
   DEFAULT_HASHING_CRYPTOGRAPHY_OPTIONS,
@@ -199,7 +196,7 @@ export class CryptographyService {
   public createCustomHash(
     algorithm: string,
     data: string | Buffer,
-    options?: GenericOptionsInterface,
+    options?: GenericOptions,
   ): Buffer {
     const inputData = this.convertInputData(data, options?.inputDataEncoding);
 
@@ -216,7 +213,7 @@ export class CryptographyService {
     algorithm: string,
     data: string | Buffer,
     oldHash: string | Buffer,
-    options?: GenericOptionsInterface,
+    options?: GenericOptions,
   ): boolean {
     const inputOldHashData = this.convertInputData(
       oldHash,
@@ -230,7 +227,7 @@ export class CryptographyService {
 
   public createSecureHash(
     data: string | Buffer,
-    options?: GenericOptionsInterface,
+    options?: GenericOptions,
   ): Buffer {
     return this.createCustomHash('shake256', data, {
       ...options,
@@ -241,7 +238,7 @@ export class CryptographyService {
   public verifySecureHash(
     data: string | Buffer,
     oldHash: string | Buffer,
-    options?: GenericOptionsInterface,
+    options?: GenericOptions,
   ): boolean {
     return this.verifyCustomHash('shake256', data, oldHash, {
       ...options,
@@ -253,7 +250,7 @@ export class CryptographyService {
     algorithm: string,
     key: string | Buffer,
     data: string | Buffer,
-    options?: GenericOptionsInterface,
+    options?: GenericOptions,
   ): Buffer {
     const inputKey = this.convertInputData(key, options?.inputKeyEncoding);
     const inputData = this.convertInputData(data, options?.inputDataEncoding);
@@ -273,7 +270,7 @@ export class CryptographyService {
     key: string | Buffer,
     data: string | Buffer,
     oldHmac: string | Buffer,
-    options?: GenericOptionsInterface,
+    options?: GenericOptions,
   ): boolean {
     const inputOldHmacData = this.convertInputData(
       oldHmac,
@@ -287,7 +284,7 @@ export class CryptographyService {
 
   public createSecureHmac(
     data: string | Buffer,
-    options?: GenericOptionsInterface,
+    options?: GenericOptions,
   ): Buffer {
     this.checkModuleOptions('HMAC', {
       masterKey: this.moduleOptions?.hashing?.hmac?.masterKey,
@@ -307,7 +304,7 @@ export class CryptographyService {
   public verifySecureHmac(
     data: string | Buffer,
     oldHmac: string | Buffer,
-    options?: GenericOptionsInterface,
+    options?: GenericOptions,
   ): boolean {
     this.checkModuleOptions('HMAC', {
       masterKey: this.moduleOptions?.hashing?.hmac?.masterKey,
@@ -333,7 +330,7 @@ export class CryptographyService {
   public async symmetricDataEncrypt(
     data: string | Buffer,
     key: string | Buffer,
-    options?: GenericOptionsInterface,
+    options?: GenericOptions,
   ): Promise<Buffer> {
     const inputData = this.convertInputData(data, options?.inputDataEncoding);
     const inputKey = this.convertInputData(key, options?.inputKeyEncoding);
@@ -362,7 +359,7 @@ export class CryptographyService {
   public async symmetricDataDecrypt(
     data: string | Buffer,
     key: string | Buffer,
-    options?: GenericOptionsInterface,
+    options?: GenericOptions,
   ): Promise<Buffer> {
     const inputData = this.convertInputData(data, options?.inputDataEncoding);
     const inputKey = this.convertInputData(key, options?.inputKeyEncoding);
@@ -394,7 +391,7 @@ export class CryptographyService {
 
   public async symmetricSecureDataEncrypt(
     data: string | Buffer,
-    options?: GenericOptionsInterface,
+    options?: GenericOptions,
   ): Promise<Buffer> {
     this.checkModuleOptions('SYMMETRIC_ENCRYPTION', {
       masterKey: this.moduleOptions?.encryption?.symmetric?.masterKey,
@@ -414,7 +411,7 @@ export class CryptographyService {
 
   public async symmetricSecureDataDecrypt(
     data: string | Buffer,
-    options?: GenericOptionsInterface,
+    options?: GenericOptions,
   ): Promise<Buffer> {
     this.checkModuleOptions('SYMMETRIC_ENCRYPTION', {
       masterKey: this.moduleOptions?.encryption?.symmetric?.masterKey,
