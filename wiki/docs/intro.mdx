@@ -52,29 +52,7 @@ This package are available on the [npm][4] registry.
 </Tabs>
 
 
-## Usage on Services
-To access cryptography methods from our `CryptographyService`, you could inject it using standard constructor injection
-
-```typescript
-import { Injectable } from '@nestjs/common';
-import { CryptographyService } from 'nestjs-cryptography';
-
-@Injectable()
-export class SomeService {
-  constructor(
-    // Inject using constructor injection
-    private readonly cryptographyService: CryptographyService
-  ) {}
-
-  async someMethod(): Promise<string> {
-    // Access service methods
-    return this.cryptographyService.genUUID();
-  }
-}
-```
-
-
-## Configuration
+## Initialization
 
 Once the installation is complete, the `CryptographyModule` can be configured as any other
 Nest package with _`forRoot`_ or _`forRootAsync`_ methods.
@@ -144,6 +122,29 @@ export class AppModule {}
 
 The _`forRoot()`_ and _`forRootAsync`_ method takes an options object as an argument.
 These options are passed through to the underlying cryptographic operations of the instance module.
+
+
+
+## Usage
+To access cryptography methods from our `CryptographyService`, you could inject it using standard constructor injection
+
+```typescript
+import { Injectable } from '@nestjs/common';
+import { CryptographyService } from 'nestjs-cryptography';
+
+@Injectable()
+export class SomeService {
+  constructor(
+    // Inject using constructor injection
+    private readonly cryptographyService: CryptographyService
+  ) {}
+
+  async someMethod(): Promise<string> {
+    // Access service methods
+    return this.cryptographyService.genUUID();
+  }
+}
+```
 
 
 [1]: https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf#page=26
